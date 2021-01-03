@@ -2,6 +2,7 @@
 #include <cmath>
 #include <stack>
 #include <string>
+#include <stdexcept>
 
 using std::stack;
 using std::string;
