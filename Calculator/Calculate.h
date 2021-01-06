@@ -41,7 +41,7 @@ double calculating(double a, char op, double b)
 	}
 }
 
-double execute(std::stack<char>& ops, std::stack<double>& operands)
+void execute(std::stack<char>& ops, std::stack<double>& operands)
 {
 	double rhs{ operands.top() };
 	operands.pop();
@@ -52,7 +52,6 @@ double execute(std::stack<char>& ops, std::stack<double>& operands)
 
 	ops.pop();
 	operands.push(result);
-	return result;
 }
 
 void push_operands(stack<double>& operands, string sub_express, size_t& index, size_t& i) {
